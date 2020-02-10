@@ -1,0 +1,36 @@
+{
+  "name": "yiisoft/yii-queue-driver-synchronous",
+  "description": "Yii Queue Extension synchronous driver",
+  "type": "library",
+  "keywords": [
+    "yii",
+    "queue",
+    "sync"
+  ],
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yiisoft/yii-queue-driver-synchronous/issues",
+    "source": "https://github.com/yiisoft/yii-queue-driver-synchronous",
+    "docs": "https://github.com/yiisoft/yii-queue-driver-synchronous/blob/master/docs/guide"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type":"package",
+      "package": {
+        "name": "viktorprogger/yii-queue",
+        "version":"dev-refactoring-tests",
+        "source": {
+          "url": "https://github.com/viktorprogger/yii-queue.git",
+          "type": "git",
+          "reference":"refactoring-tests"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "viktorprogger/yii-queue": "dev-refactoring-tests"
+  }
+}
