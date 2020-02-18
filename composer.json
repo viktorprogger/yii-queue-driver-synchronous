@@ -15,22 +15,8 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "repositories": [
-    {
-      "type":"package",
-      "package": {
-        "name": "viktorprogger/yii-queue",
-        "version":"dev-refactoring-tests",
-        "source": {
-          "url": "https://github.com/viktorprogger/yii-queue.git",
-          "type": "git",
-          "reference":"refactoring-tests"
-        }
-      }
-    }
-  ],
   "require": {
     "php": "^7.4",
-    "viktorprogger/yii-queue": "dev-refactoring-tests"
+    "yiisoft/yii-queue": "dev-master"
   }
 }
