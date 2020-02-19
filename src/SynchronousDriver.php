@@ -7,6 +7,7 @@ namespace Yiisoft\Yii\Queue\Drivers;
 use InvalidArgumentException;
 use Yiisoft\Yii\Queue\Cli\LoopInterface;
 use Yiisoft\Yii\Queue\DriverInterface;
+use Yiisoft\Yii\Queue\QueueDependentInterface;
 use Yiisoft\Yii\Queue\Enum\JobStatus;
 use Yiisoft\Yii\Queue\Jobs\DelayableJobInterface;
 use Yiisoft\Yii\Queue\Jobs\JobInterface;
@@ -16,7 +17,7 @@ use Yiisoft\Yii\Queue\MessageInterface;
 use Yiisoft\Yii\Queue\Queue;
 use Yiisoft\Yii\Queue\Workers\WorkerInterface;
 
-final class SynchronousDriver implements DriverInterface
+final class SynchronousDriver implements DriverInterface, QueueDependentInterface
 {
     private array $messages = [];
     private Queue $queue;
